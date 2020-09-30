@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EstatisticaJogo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtNomeJogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#83A9A9A9"
+        android:padding="5dp"
+        android:text="Nome do jogo: xxxxxx"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:id="@+id/txtDataJogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#83A9A9A9"
+        android:padding="5dp"
+        android:text="Jogo do dia: xx/xx/xxxx"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <TextView
+        android:id="@+id/txtPontosDoJogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#83A9A9A9"
+        android:padding="8dp"
+        android:text="Pontuação: xx"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+         />
+
+</LinearLayout>
