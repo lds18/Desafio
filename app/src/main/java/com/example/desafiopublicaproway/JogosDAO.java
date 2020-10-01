@@ -31,16 +31,6 @@ public class JogosDAO {
         return banco.insert("jogos",null, values);
     }
 
-    public void atualizarJogo(Jogo jogo){
-        ContentValues values = new ContentValues();
-        values.put("id",jogo.getId());
-        values.put("pontuacao",jogo.getPontuacao());
-        values.put("data",jogo.getData());
-        values.put("nome",jogo.getNome());
-        String[] id = new String[]{Integer.toString(jogo.getId())};
-        banco.update("jogos", values, "id=?", id);
-    }
-
     public ArrayList obterJogos(){
         ArrayList<Jogo> jogos = new ArrayList<>();
         Cursor cursor = banco.query("jogos", new String[]{"id","pontuacao","data","nome"}, (String)null, (String[])null, (String)null, (String)null, (String)null);

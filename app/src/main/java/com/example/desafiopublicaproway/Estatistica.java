@@ -71,6 +71,7 @@ public class Estatistica extends AppCompatActivity {
         listview_jogos.setAdapter(adapterjogo);
     }
 
+
     private void verificarJogos() {
         if(jogos.size()<=0){
             SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.desafiopublicaproway",Context.MODE_PRIVATE);
@@ -78,6 +79,7 @@ public class Estatistica extends AppCompatActivity {
             sharedPreferences.edit().putInt("minimo_temporada",0).apply();
             sharedPreferences.edit().putInt("quebra_recorde_minimo",0).apply();
             sharedPreferences.edit().putInt("quebra_recorde_maximo",0).apply();
+            sharedPreferences.edit().putBoolean("primeiro_jogo",true).apply();
         }
     }
 
