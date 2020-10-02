@@ -1,5 +1,6 @@
 package com.example.desafiopublicaproway;
 
+//essa é a classe do objeto Jogo, contendo seus atributos e seus getters e setters.
 public class Jogo {
 
     int id, pontuacao;

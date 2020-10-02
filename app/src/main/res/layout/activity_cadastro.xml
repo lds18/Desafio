@@ -88,5 +88,5 @@
         android:gravity="center"
         android:text="Salvar Cadastro"
         android:textSize="15dp"
-        android:onClick="SalvarJogo"/>
+        android:onClick="Salvar"/>
 </RelativeLayout>

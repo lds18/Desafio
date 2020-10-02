@@ -12,17 +12,20 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class AdapterJogo extends ArrayAdapter {
+//Essa classe coordena as informação que serão exibidas no listview na activity_estatistica.
+public class AdapterJ extends ArrayAdapter {
 
     Context context;
     ArrayList<Jogo> jogos;
 
-    public AdapterJogo(Context context,ArrayList<Jogo> jogos) {
+//Esse é o contrutor que recebe como parâmetro um contexto e um ArrayList com os objetos jogo.
+    public AdapterJ(Context context, ArrayList<Jogo> jogos) {
         super(context, R.layout.layout_estatistica_jogo,jogos);
         this.context=context;
         this.jogos = new ArrayList<Jogo>(jogos);
     }
 
+//Método responsável por informar a posição de todos os dados que serão exibidas.
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
